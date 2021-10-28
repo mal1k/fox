@@ -63,23 +63,23 @@
                 <div class="collapse navbar-collapse" id="main_menu">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#slide"><?php the_field('menu_home', get_option('page_on_front')); ?>
+                            <a class="nav-link anchor" href="<?php if ( get_option('page_on_front') != get_the_ID() ) { echo home_url().'?'; }?>#slide"><?php the_field('menu_home', get_option('page_on_front')); ?>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#about"><?php the_field('menu_about', get_option('page_on_front')); ?></a>
+                            <a class="nav-link anchor" href="<?php if ( get_option('page_on_front') != get_the_ID() ) { echo home_url().'?'; }?>#about"><?php the_field('menu_about', get_option('page_on_front')); ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#main_features"><?php the_field('menu_features', get_option('page_on_front')); ?></a>
+                            <a class="nav-link anchor" href="<?php if ( get_option('page_on_front') != get_the_ID() ) { echo home_url().'?'; }?>#main_features"><?php the_field('menu_features', get_option('page_on_front')); ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#screenshots"><?php the_field('menu_screenshots', get_option('page_on_front')); ?></a>
+                            <a class="nav-link anchor" href="<?php if ( get_option('page_on_front') != get_the_ID() ) { echo home_url().'?'; }?>#screenshots"><?php the_field('menu_screenshots', get_option('page_on_front')); ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#team"><?php the_field('menu_team', get_option('page_on_front')); ?></a>
+                            <a class="nav-link anchor" href="<?php if ( get_option('page_on_front') != get_the_ID() ) { echo home_url().'?'; }?>#team"><?php the_field('menu_team', get_option('page_on_front')); ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#recent_news"><?php the_field('menu_news', get_option('page_on_front')); ?></a>
+                            <a class="nav-link anchor" href="<?php if ( get_option('page_on_front') != get_the_ID() ) { echo home_url().'?'; }?>#recent_news"><?php the_field('menu_news', get_option('page_on_front')); ?></a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -95,7 +95,7 @@
                             </div>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#git_in_touch"><?php the_field('menu_contact', get_option('page_on_front')); ?></a>
+                            <a class="nav-link anchor" href="<?php if ( get_option('page_on_front') != get_the_ID() ) { echo home_url().'?'; }?>#git_in_touch"><?php the_field('menu_contact', get_option('page_on_front')); ?></a>
                         </li>
                     </ul>
                 </div>
